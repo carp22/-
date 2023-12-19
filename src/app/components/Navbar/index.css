@@ -1,0 +1,96 @@
+.navbar>a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 9em;
+    height: 2.5em;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    padding: 0.5em;
+    border: 1px solid black;
+    box-shadow: 6px 6px 0px black;
+    transition: .4s;
+
+    z-index: 1;
+}
+
+.navbar>a:hover {
+    color: white;
+    cursor: pointer;
+    box-shadow: none;
+    transform: translateX(6px) translateY(6px);
+    transition: .2s ease-in-out;
+    background-color: black;
+    border: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+/* .navbar>a {
+    font-weight: bold;
+    font-size: 28px;
+} */
+
+/* [app-theme="light"] .navbar>a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #001B79;
+    transition: width 0.3s ease-out
+}
+
+[app-theme="dark"] .navbar>a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #E94560;
+    transition: width 0.3s ease-out
+} */
+
+/* .navbar>a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--font-color);
+} */
+
+/* @media screen and (max-width: 700px) {
+    .navbar>a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 9em;
+        height: 2.5em;
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+        background-color: white;
+        padding: 0.5em;
+        border: 1px solid black;
+        box-shadow: 6px 6px 0px black;
+        transition: .4s;
+    
+        z-index: 1;
+    }
+
+} */
+@media screen and (max-width: 560px) {
+    .navbar > a {
+        display: none;
+
+    }
+
+}

@@ -1,0 +1,119 @@
+.section-resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.working-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 50px 50px;
+    padding-block: 50px 50px;
+    background-color: var(--experience-color);
+    border-radius: 7.5px;
+    color: var(--font-color);
+    transition: all 0.5s ease;
+}
+
+.cidil-exp,
+.outplex-exp {
+    padding-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 48px;
+}
+
+.company-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+[app-theme="light"] .company-link{
+    color: #001B79;
+}
+[app-theme="dark"] .company-link{
+    color: #E94560;
+}
+
+.company-link>img {
+    fill: red;
+    width: 36px;
+    height: 36px;
+    transition: all 0.2s ease-in-out;
+}
+
+.company-link-text {
+    font-size: 32px;
+}
+
+[appTheme="light"] .company-link-text .company-link{
+    color: #1F4068;
+}
+
+[appTheme="dark"] .company-link-text .company-link{
+    color: #E94560;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.position {
+    font-size: 24px;
+    padding-top: 7px;
+}
+
+.tasks {
+    font-size: 22px;
+    padding-left: 40px; 
+    padding-top: 7px;
+}
+@media screen and (max-width: 1840px) {
+    .cidil-exp,
+    .outplex-exp {
+        padding-top: 20px;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 40px;
+    }
+    .company-link-text {
+        font-size: 24px;
+    }
+    .position {
+        font-size: 20px;
+        padding-top: 7px;
+    }
+    .tasks {
+        font-size: 18px;
+        padding-left: 40px; 
+        padding-top: 7px;
+    }
+    
+  }
+  @media screen and (max-width: 700px) {
+    .section-resume{
+        height: fit-content;
+    }
+     
+  }
+  @media screen and (max-width: 560px) {
+    .working-experience {
+        padding-inline: 10px 10px;
+        padding-block: 10px 10px;
+        background-color: var(--experience-color);
+        border-radius: 7.5px;
+        color: var(--font-color);
+        transition: all 0.5s ease;
+    }
+    
+  }
