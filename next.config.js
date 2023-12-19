@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output:"export",
     images: {
         remotePatterns: [{
             protocol: "https",
@@ -7,6 +8,7 @@ const nextConfig = {
             port: "",
             pathname: "/uc"
         }],
+        unoptimized: true
     },
 }
 
