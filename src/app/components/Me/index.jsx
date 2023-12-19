@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import { ThemeContext } from '@/app/context/ThemeContext'
 
 //Images
-import meImg from "/carp22.github.io/me-image.jpg"
+// import meImg from "/carp22.github.io/me-image.jpg"
 
 //Libraries
 import Image from "next/image"
@@ -25,7 +25,7 @@ function Me() {
   return (
     <section className='aboutme-section'>
       
-      <Image src={meImg} alt='me-img' className='aboutme-img' priority />
+      <Image src="/carp22.github.io/me-image.jpg" alt='me-img' className='aboutme-img' priority />
 
       <div className="aboutme-description">
         <h3 className='greetings'>Hi there 🫡,</h3>
