@@ -1,20 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-        exportPathMap: function() {
+    output: 'export',
+    basePath: "/carp22.github.io",
+    images: {
+        unoptimized: true,
+        domains: ["drive.google.com"],
+    },
+    async rewrites() {
+        return [
+            {
+                source: '/:path*',
+                destination: '/',
+            },
+        ];
+    },
+    generateStaticParams: async () => {
         return {
             '/': { page: '/' },
         };
     },
-    basePath: "/carp22.github.io",
-    images: {
-        unoptimized: true,
-        remotePatterns: [{
-        protocol: "https",
-        hostname: "drive.google.com",
-        port: "",
-        pathname: "/uc"
-        }],
-    },
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
