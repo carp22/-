@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import { ThemeContext } from '@/app/context/ThemeContext'
 
 //Images
-import meImg from "/public/me-image.jpg"
+import meImg from "./me-image.jpg"
 
 //Libraries
 import Image from "next/image"
