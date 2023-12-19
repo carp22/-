@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
+        exportPathMap: function() {
+        return {
+            '/': { page: '/' },
+        };
+    },
     basePath: "/carp22.github.io",
     images: {
         unoptimized: true,
