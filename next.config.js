@@ -2,13 +2,13 @@
 const nextConfig = {
     output:"export",
     images: {
+        unoptimized: true,
         remotePatterns: [{
             protocol: "https",
             hostname: "drive.google.com",
             port: "",
             pathname: "/uc"
         }],
-        unoptimized: true
     },
 }
 
